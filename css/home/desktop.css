@@ -1,0 +1,49 @@
+/* ------------- header ------------- */
+.header {
+  width: 100%;
+  position: fixed;
+  padding: 2rem 4rem;
+  background-color: black;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  display: flex;
+}
+.logo svg {
+  width: 10rem;
+  filter: invert(44%) sepia(95%) saturate(5830%) hue-rotate(341deg) brightness(81%) contrast(131%);
+  -webkit-filter: invert(44%) sepia(95%) saturate(5830%) hue-rotate(341deg) brightness(81%) contrast(131%);
+}
+.list-cont {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-left: 1rem;
+}
+.link-item {
+  margin-left: 1rem;
+}
+.link {
+  text-decoration: none;
+  color: var(--color-withe);
+  transition: .2s ease-in-out;
+  -webkit-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+  -ms-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+}
+.link:hover {
+  opacity: .8;
+}
+.search {
+  display: flex;
+  width: 400px;
+}
+.search img {
+  width: 2rem;
+  filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(156deg) brightness(105%) contrast(101%);
+  -webkit-filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(156deg) brightness(105%) contrast(101%);
+}

@@ -39,3 +39,13 @@ main {
   padding: 4rem;
   padding-bottom: 8rem;
 }
+.footer > div {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.list-cont {
+  justify-content: start;
+}
+.link-item {
+  width: 25%;
+}

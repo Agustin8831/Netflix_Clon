@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/home/mobil.css">
+  <!-- title and icon -->
+  <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" type="image/x-icon">
+  <title>Home - Netflix</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a class="logo" href="./home.html">
+        <svg viewBox="0 0 111 30" class="svg-icon-netflix-logo">
+          <g>
+            <path d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z" id="Fill-14"></path>
+          </g>
+        </svg>
+      </a>
+      <input type="checkbox" id="btn-browser">
+      <label for="btn-browser" class="label-browser">
+        Browser
+      </label>
+      <ul class="list-cont">
+        <li class="link-item">
+          <a class="link" target="_blank" href="">Home</a>
+        </li>
+        <li class="link-item">
+          <a class="link" target="_blank" href="">TV Shows</a>
+        </li>
+        <li class="link-item">
+          <a class="link" target="_blank" href="">Movies</a>
+        </li>
+        <li class="link-item">
+          <a class="link" target="_blank" href="">New & Popular</a>
+        </li>
+        <li class="link-item">
+          <a class="link" target="_blank" href="">My List</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="secondary-nav">
+      <div class="search">
+        <img src="./assets/icon/search.svg" alt="">
+        <input type="text" placeholder="Titles, people, genres">
+      </div>
+      <div class="notification">
+        <input type="checkbox" id="btn-notification">
+        <label for="btn-notification" class="label-notification">
+          <img src="./assets/icon/notifications.svg" alt="">
+        </label>
+        <div class="notification-cont">
+          <div class="notification-item">
+            <img class="notification-item-img" src="https://dnm.nflximg.net/api/v6/kvDymu0eXRyicIuSUzvRrxrm5dU/AAAABdVwixyeq33sxbQipWuy-IxOzrxtoHFId9pVJ0q41c0HDeq8u-msXvHXj9EO5D8NPPWNIj68V-BdU8ozJ0stJ8kwnerWQj2GtMU_tBJVnS3wi6iPc6RqeZIvXoWX7eO3bNUAJQE.jpg?r=6d5" alt="">
+            <div class="notification-item-text">
+              <p class="title">New Arrival</p>
+              <p class="title">Black Crab</p>
+              <p class="date">3 days ago</p>
+            </div>
+          </div>
+          <div class="notification-item">
+            <img class="notification-item-img" src="https://dnm.nflximg.net/api/v6/kvDymu0eXRyicIuSUzvRrxrm5dU/AAAABU8N_31k68ZlFd2ehayGg9RCG9sxaLUKY6O33aDN4UVii-szVWHdYFhAV0mnvr8tgbCwjYvrzMGHffKx3Opw2wOQGbfHaDFXMRd4tZVzBNimTMtUKypQQkgqrvnPziVk5bsD608.jpg?r=6e6" alt="">
+            <div class="notification-item-text">
+              <p class="title">New Arrival</p>
+              <p class="title">Dunkirk</p>
+              <p class="date">1 week ago</p>
+            </div>
+          </div>
+          <div class="notification-item">
+            <img class="notification-item-img" src="https://dnm.nflximg.net/api/v6/kvDymu0eXRyicIuSUzvRrxrm5dU/AAAABRxxOHlZfOEHBO57wzd_1PRKn7vcRfGKA4xX1O71Fm0CJVEZX_-wirkPo58jKr8rOClJEmCLwZw1mIkHg87GJD0OwvXguLx_le8lrGuoIZYweUtoEvsHYn2ihWmG_uVKOrpGTYo.jpg?r=f40" alt="">
+            <div class="notification-item-text">
+              <p class="title">New Arrival</p>
+              <p class="title">The Adam Project</p>
+              <p class="date">2 week ago</p>
+            </div>
+          </div>
+          <div class="notification-item">
+            <img class="notification-item-img" src="https://dnm.nflximg.net/api/v6/kvDymu0eXRyicIuSUzvRrxrm5dU/AAAABU74xBH_Q7Vm0kHev9d5sBG6G3uEyaBWc2cpZYvWW2IW-RD1TjgQumpJseDHadEuyFC_JPL_0_Q7XBf35SvTN6a_9mJ33pbwaGtSaz_2-cWPwAsJ7Bif-nM2uyXzfrGHyLUV0y0.jpg?r=774" alt="">
+            <div class="notification-item-text">
+              <p class="title">New Arrival</p>
+              <p class="title">Savage Rhythm</p>
+              <p class="date">3 week ago</p>
+            </div>
+          </div>
+          <div class="notification-item">
+            <img class="notification-item-img" src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWsbjlWAn2Q0Zw085y7bRSs_c-3y-5GEDBOFRBG0JiRWB-64IEKDqBjWxrnHEYdU203kH0j9H1sq8AbCpk08_N8.jpg?r=ae6" alt="">
+            <div class="notification-item-text">
+              <p class="title">New Arrival</p>
+              <p class="title">Shrek 2</p>
+              <p class="date">3 week ago</p>
+            </div>
+          </div>
+          <div class="notification-item">
+            <img class="notification-item-img" src="https://dnm.nflximg.net/api/v6/kvDymu0eXRyicIuSUzvRrxrm5dU/AAAABZrCm0RYlCdnG7FucN0AvLS9MZu00hsBS_8W1JhTzpWM8WoHO3-Rlak_htEVu3IzvVO9PNB1PTi4lYI7x9QAmykl948UGmIpopZphGVpHOuUQ_FEdfrzBLxl5WMeLYgasHSWu8w.jpg?r=7b3" alt="">
+            <div class="notification-item-text">
+              <p class="title">New Arrival</p>
+              <p class="title">A Madea Homecoming</p>
+              <p class="date">1 month ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="user">
+        <input type="checkbox" id="btn-user">
+        <label for="btn-user" class="label-user">
+          <img src="./assets/img/user.png" alt="">
+        </label>
+        <div class="user-cont">
+          <div class="users">
+            <div class="user-item">
+              <img src="https://occ-0-413-114.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABYuDKpuhRvzb2dnn4LvRPHQLdWEzBnRHNR619rihtUsfW3kNkoymuhH_2yi9FGgbfbSQAOYaQEIxuR6lSqO-MQQ.png?r=583" alt="">
+              <p>User 1</p>
+            </div>
+            <div class="user-item">
+              <img src="https://occ-0-413-114.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQRNKsAznAnWDLogk1qPoMuF9YMF-c4_dQhEvEzFK0JVaep9_qJiWkSUTfSERrptV_Cxa5YtEb-QUbsNn2RS1A4.png?r=ecb" alt="">
+              <p>User 2</p>
+            </div>
+            <div class="user-item">
+              <img src="https://occ-0-413-114.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABbXn08CI_-cDGXhROq6Hcu8Nu5X38FLVIqd8dygBDPJswvE0vp2-gf1xiFXiVi2-OZ0_B6bB19MtFNmeKXEtigM.png?r=83d" alt="">
+              <p>User 3</p>
+            </div>
+            <div class="user-item">
+              <img src="https://occ-0-413-114.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdhN8KImC7N4wZsYQRfIVj9_qEJ0bj3lewDM_0NxqTZrop79BOGazdphHSS5TE6a-EK4-9ILoG4JY_yjQFGUbPKApKEyT6bdr3GLmiQaDbmuWQ0SFrLMP461fcWanutR0cwoEg.png?r=2ca" alt="">
+              <p>User 4</p>
+            </div>
+            <div class="manage-profiles">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="Hawkins-Icon Hawkins-Icon-Standard">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.2071 7.79285L15.2071 0.792847L13.7929 2.20706L20.7929 9.20706L22.2071 7.79285ZM13.2071 3.79285C12.8166 3.40232 12.1834 3.40232 11.7929 3.79285L2.29289 13.2928C2.10536 13.4804 2 13.7347 2 14V20C2 20.5522 2.44772 21 3 21H9C9.26522 21 9.51957 20.8946 9.70711 20.7071L19.2071 11.2071C19.5976 10.8165 19.5976 10.1834 19.2071 9.79285L13.2071 3.79285ZM17.0858 10.5L8.58579 19H4V14.4142L12.5 5.91417L17.0858 10.5Z" fill="currentColor"></path>
+              </svg>
+              <p>Manage Profiles</p>
+            </div>
+          </div>
+          <div class="submenu">
+            <p>Kids</p>
+            <p>DVD</p>
+          </div>
+          <div class="config">
+            <div>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="Hawkins-Icon Hawkins-Icon-Standard">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00011 8C9.00011 6.34315 10.3433 5 12.0001 5C13.657 5 15.0001 6.34315 15.0001 8C15.0001 9.65685 13.657 11 12.0001 11C10.3433 11 9.00011 9.65685 9.00011 8ZM12.0001 3C9.23869 3 7.00011 5.23858 7.00011 8C7.00011 10.7614 9.23869 13 12.0001 13C14.7615 13 17.0001 10.7614 17.0001 8C17.0001 5.23858 14.7615 3 12.0001 3ZM5.98069 21.1961C6.46867 18.7563 8.61095 17 11.0991 17H12.9011C15.3893 17 17.5316 18.7563 18.0195 21.1961L19.9807 20.8039C19.3057 17.4292 16.3426 15 12.9011 15H11.0991C7.65759 15 4.69447 17.4292 4.01953 20.8039L5.98069 21.1961Z" fill="currentColor"></path>
+              </svg>
+              <p>Account</p>
+            </div>
+            <div>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="Hawkins-Icon Hawkins-Icon-Standard">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12ZM12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM12 8.5C10.6831 8.5 10 9.24303 10 10H8C8 7.75697 10.0032 6.5 12 6.5C13.9968 6.5 16 7.75697 16 10C16 11.3487 14.9191 12.2679 13.8217 12.68C13.5572 12.7793 13.3322 12.9295 13.1858 13.0913C13.0452 13.2467 13 13.383 13 13.5V14H11V13.5C11 12.0649 12.1677 11.1647 13.1186 10.8076C13.8476 10.5339 14 10.1482 14 10C14 9.24303 13.3169 8.5 12 8.5ZM13.5 16.5C13.5 17.3284 12.8284 18 12 18C11.1716 18 10.5 17.3284 10.5 16.5C10.5 15.6716 11.1716 15 12 15C12.8284 15 13.5 15.6716 13.5 16.5Z" fill="currentColor"></path>
+              </svg>
+              <p>Help Center</p>
+            </div>
+          </div>
+          <div class="sign-out">
+            <p>Sign out of Netflix</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</body>
+</html>

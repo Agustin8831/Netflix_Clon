@@ -1,0 +1,215 @@
+:root {
+  --color-red: #e50914;
+  --color-red-hard: #e50914b6;
+  --color-withe: rgb(255, 255, 255);
+  --color-black: rgba(0, 0, 0, 0.692);
+  --color-black-hard: #333333;
+  --color-black-text-soft: #b3b3b3;
+  --color-black-texts-medium: #8c8c8c;
+  --color-black-texts-hard: #737373;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* ------------- header ------------- */
+.header {
+  width: 100%;
+  height: 55px;
+  padding:  2rem;
+  position: fixed;
+  background-color: black;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ------------- nav ------------- */
+.nav {
+  display: flex;
+}
+.logo svg {
+  width: 5rem;
+  filter: invert(44%) sepia(95%) saturate(5830%) hue-rotate(341deg) brightness(81%) contrast(131%);
+  -webkit-filter: invert(44%) sepia(95%) saturate(5830%) hue-rotate(341deg) brightness(81%) contrast(131%);
+}
+.label-browser {
+  margin-left: 2rem;
+  color: var(--color-withe);
+}
+.label-browser::after {
+  display: inline-block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #fff transparent transparent transparent;
+  margin-left: .52rem;
+}
+.list-cont {
+  display: none;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  list-style: none;
+  background-color: var(--color-black);
+  width: 60%;
+  border-top: 2px solid rgb(255, 255, 255);
+}
+.link {
+  width: 100%;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: var(--color-withe);
+  font-size: 1.6rem;
+}
+#btn-browser {
+  display: none;
+}
+#btn-browser:checked ~ .list-cont {
+  display: block;
+}
+/* ------------- secondary nav ------------- */
+.secondary-nav {
+  display: flex;
+  align-items: center;
+}
+/* ------------- search ------------- */
+.search {
+  display: none;
+}
+/* ------------- notification ------------- */
+#btn-notification {
+  display: none;
+}
+.label-notification img {
+  width: 2rem;
+  filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(156deg) brightness(105%) contrast(101%);
+  -webkit-filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(156deg) brightness(105%) contrast(101%);
+}
+.notification-cont {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 80%;
+  height: 350px;
+  background-color: var(--color-black);
+  overflow-x: hidden;
+  border-top: 2px solid rgb(255, 255, 255);
+}
+.notification-item {
+  padding: 2rem 1.5rem;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid white;
+}
+.notification-item-img {
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+.notification-item-text {
+  margin-left: 1rem;
+}
+.title {
+  color: var(--color-withe);
+  font-size: 1.6rem;
+}
+.date {
+  font-size: 1.2rem;
+  color: var(--color-black-text-soft);
+}
+#btn-notification:checked ~ .notification-cont {
+  display: block;
+}
+/* ------------- user ------------- */
+#btn-user {
+  display: none;
+}
+.label-user {
+  margin-left: 2rem;
+}
+.label-user img {
+  width: 3.5rem;
+}
+.user-cont {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  overflow-y: scroll;
+  width: 55%;
+  height: 300px;
+  background-color: var(--color-black);
+  color: var(--color-withe);
+  font-size: 1.4rem;
+}
+.users {
+  width: 100%;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.user-item {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+.user-item img {
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+.user-item p {
+  margin-left: 1rem;
+}
+.manage-profiles {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.manage-profiles svg {
+  margin-left: 1rem;
+}
+.manage-profiles p {
+  margin-left: 1rem;
+}
+.submenu {
+  padding: 1rem 1rem 0 1rem;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.submenu p {
+  margin-bottom: 1rem;
+}
+.config {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  padding: 1rem 1rem 0 1rem;
+}
+.config > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.config > div p {
+  margin-left: 1rem;
+}
+.sign-out {
+  padding: 1rem;
+  text-align: center;
+}
+#btn-user:checked ~ .user-cont {
+  display: block;
+}
