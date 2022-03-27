@@ -1,0 +1,236 @@
+:root {
+  --color-red: #e50914;
+  --color-red-hard: #e50914b6;
+  --color-withe: rgb(255, 255, 255);
+  --color-black: rgb(5,3,5);
+  --color-black-hard: #333333;
+  --color-black-text-soft: #b3b3b3;
+  --color-black-texts-medium: #8c8c8c;
+  --color-black-texts-hard: #737373;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--color-black);
+}
+/* --------------- Header --------------- */
+header {
+  padding: 2rem;
+}
+header svg {
+  width: 100px;
+  filter: invert(44%) sepia(95%) saturate(5830%) hue-rotate(341deg) brightness(81%) contrast(131%);
+  -webkit-filter: invert(44%) sepia(95%) saturate(5830%) hue-rotate(341deg) brightness(81%) contrast(131%);
+}
+/* --------------- Main --------------- */
+.login-cont {
+  width: 100%;
+  color: white;
+  padding: 2rem;
+}
+.login-cont h1 {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+}
+/* --------------- login-cont --------------- */
+.login-cont {
+  padding-bottom: 15rem;
+}
+
+/* --------------- login form --------------- */
+.input-cont {
+  position: relative;
+  background-color: var(--color-black-hard);
+  overflow: hidden;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 2rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+#placeholder-email, #placeholder-password {
+  display: none;
+}
+.label-email,.label-password {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  width: 100%;
+  height: 50px;
+  font-size: 1.4rem;
+  transition: .2s ease-in-out;
+  -webkit-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+  -ms-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+}
+.label-email p {
+  color: var(--color-black-texts-medium);
+}
+.label-password p {
+  color: var(--color-black-texts-medium);
+}
+.email-cont,.password-cont {
+  width: 100%;
+  height: 100%;
+}
+.email-cont  input { 
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding-top: 1.5rem;
+  padding-left: 2rem;
+  background-color: transparent;
+  color: var(--color-withe);
+}
+.password-cont input {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding-top: 1.5rem;
+  padding-left: 2rem;
+  background-color: transparent;
+  color: var(--color-withe);
+}
+#placeholder-email:checked ~ .label-email {
+  position: absolute;
+  height: 30px;
+  font-size: 1rem;
+}
+#placeholder-password:checked ~ .label-password {
+  position: absolute;
+  height: 30px;
+  font-size: 1rem;
+}
+
+.btn-login {
+  width: 100%;
+  height: 50px;
+  margin-top: 2rem;
+  background-color: var(--color-red);
+  color: var(--color-withe);
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: none;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+.btn-login:focus {
+  background-color: var(--color-red-hard);
+}
+
+.login-help {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-black-text-soft);
+  font-size: 1.4rem;
+}
+.login-help input {
+  margin-right: .5rem;
+}
+.login-help a {
+  text-decoration: none;
+  color: var(--color-black-text-soft);
+}
+.login-help a:hover {
+  text-decoration: underline;
+}
+/* --------------- login-form-other --------------- */
+.login-form-other {
+  margin-top: 4rem;
+  font-size: 1.4rem;
+  color: var(--color-black-texts-medium);
+}
+.login-signup-now a {
+  text-decoration: none;
+  color: var(--color-withe);
+}
+.login-signup-now a:hover {
+  text-decoration: underline;
+}
+
+.recaptcha {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.recaptcha a {
+  text-decoration: none;
+  color: rgb(27, 106, 255);
+}
+.recaptcha a:hover {
+  text-decoration: underline;
+}
+/* --------------- footer --------------- */
+.footer {
+  border-top: 1px solid var(--color-black-texts-hard);
+  font-size: 1.4rem;
+  color: var(--color-black-texts-medium);
+  padding: 2rem;
+  padding-bottom: 8rem;
+}
+.p-top a {
+  color: var(--color-black-texts-medium);
+  text-decoration: none;
+}
+.p-top a:hover {
+  text-decoration: underline;
+}
+.list-cont {
+  margin-top: 2rem;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  column-gap: 0;
+}
+.link-item {
+  width: 50%;
+}
+.link {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--color-black-texts-medium);
+}
+.link:hover {
+  text-decoration: underline;
+}
+.language-selector {
+  margin-top: 4rem;
+}
+.language-selector label {
+  display: block;
+  margin-bottom: 1rem;
+}
+.selector {
+  padding: 1rem;
+  background-color: transparent;
+  border: 1px solid var(--color-black-texts-hard);
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  color: var(--color-black-texts-medium);
+  
+}
+
+/* 
+https://assets.nflxext.com/ffe/siteui/vlv3/87a1d9d8-a21d-4109-ba3a-c10d9055f5cf/250fce75-963a-4be7-b321-b6600d78cc39/MX-es-20220307-popsignuptwoweeks-perspective_alpha_website_small.jpg
+*/
