@@ -2,7 +2,7 @@
   --color-red: #e50914;
   --color-red-hard: #e50914b6;
   --color-withe: rgb(255, 255, 255);
-  --color-black: rgb(5,3,5);
+  --color-black: rgba(0, 0, 0, 0.815);
   --color-black-hard: #333333;
   --color-black-text-soft: #b3b3b3;
   --color-black-texts-medium: #8c8c8c;
@@ -16,9 +16,12 @@
 html {
   font-size: 62.5%;
 }
-body {
+.container {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--color-black);
+  background-color: black;
+}
+.movie-background {
+  display: none;
 }
 /* --------------- Header --------------- */
 header {
@@ -34,16 +37,12 @@ header svg {
   width: 100%;
   color: white;
   padding: 2rem;
+  padding-bottom: 15rem;
 }
 .login-cont h1 {
   font-size: 3.2rem;
   margin-bottom: 2rem;
 }
-/* --------------- login-cont --------------- */
-.login-cont {
-  padding-bottom: 15rem;
-}
-
 /* --------------- login form --------------- */
 .input-cont {
   position: relative;
@@ -230,7 +229,14 @@ header svg {
   color: var(--color-black-texts-medium);
   
 }
-
-/* 
-https://assets.nflxext.com/ffe/siteui/vlv3/87a1d9d8-a21d-4109-ba3a-c10d9055f5cf/250fce75-963a-4be7-b321-b6600d78cc39/MX-es-20220307-popsignuptwoweeks-perspective_alpha_website_small.jpg
-*/
+@media screen and (min-width:500px) {
+  header svg {
+    width: 160px;
+  }
+  .list-cont {
+    justify-content: space-evenly;
+  }
+  .link-item {
+    width: 30%;
+  }
+}
