@@ -360,17 +360,3 @@ main {
 .ftr__link:hover {
   text-decoration: underline;
 }
-
-@media screen and (min-width:500px) {
-  .sec-cont__carousel {
-    grid-template-columns: repeat(6,220px);
-  }
-  .sec-cont__carousel-item {
-    height: 120px;
-  }
-  .ftr__list {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-  }
-}

@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="./css/home/mobile.css">
+  <link rel="stylesheet" href="./css/home/tablet.css" media="screen and (min-width:500px)">
   <!-- title and icon -->
   <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" type="image/x-icon">
   <title>Home - Netflix</title>
@@ -48,8 +49,13 @@
     </nav>
     <div class="secondary-nav">
       <div class="search">
-        <img src="./assets/icon/search.svg" alt="">
-        <input type="text" placeholder="Titles, people, genres">
+        <input type="checkbox" id="btn-search">
+        <label for="btn-search" class="label-search">
+          <img src="./assets/icon/search.svg" alt="">
+        </label>
+        <div class="search-cont">
+          <input type="text" placeholder="Titles, people, genres">
+        </div>
       </div>
       <div class="notification">
         <input type="checkbox" id="btn-notification">
