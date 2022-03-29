@@ -1,0 +1,376 @@
+:root {
+  --color-red: #e50914;
+  --color-withe: rgb(255, 255, 255);
+  --color-black: rgba(0, 0, 0, 0.87);
+  --color-black-background: #141414;
+  --color-h2: #999;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* ------------- header ------------- */
+.header {
+  width: 100%;
+  height: 55px;
+  padding:  2rem;
+  position: fixed;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+}
+/* ------------- nav ------------- */
+.nav {
+  display: flex;
+}
+.logo svg {
+  width: 5rem;
+  filter: invert(44%) sepia(95%) saturate(5830%) hue-rotate(341deg) brightness(81%) contrast(131%);
+  -webkit-filter: invert(44%) sepia(95%) saturate(5830%) hue-rotate(341deg) brightness(81%) contrast(131%);
+}
+.label-browser {
+  margin-left: 2rem;
+  color: var(--color-withe);
+}
+.label-browser::after {
+  display: inline-block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #fff transparent transparent transparent;
+  margin-left: .52rem;
+}
+.list-cont {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  list-style: none;
+  background-color: var(--color-black);
+  width: 60%;
+  border-top: 2px solid rgb(255, 255, 255);
+}
+.link {
+  width: 100%;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: var(--color-withe);
+  font-size: 1.6rem;
+}
+#btn-browser {
+  display: none;
+}
+#btn-browser:checked ~ .list-cont {
+  display: block;
+}
+/* ------------- secondary nav ------------- */
+.secondary-nav {
+  display: flex;
+  align-items: center;
+}
+/* ------------- search ------------- */
+.search {
+  display: none;
+}
+/* ------------- notification ------------- */
+#btn-notification {
+  display: none;
+}
+.label-notification img {
+  width: 2rem;
+  filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(156deg) brightness(105%) contrast(101%);
+  -webkit-filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(156deg) brightness(105%) contrast(101%);
+}
+.notification-cont {
+  display: none;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  width: 70%;
+  height: 300px;
+  background-color: var(--color-black);
+  overflow-x: hidden;
+  border-top: 2px solid rgb(255, 255, 255);
+}
+.notification-item {
+  padding: 1rem 1.5rem;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid white;
+}
+.notification-item-img {
+  width: 80px;
+  object-fit: contain;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+.notification-item-text {
+  margin-left: 1rem;
+}
+.title {
+  color: var(--color-withe);
+  font-size: 1.6rem;
+}
+.date {
+  font-size: 1.2rem;
+  color: var(--color-h2);
+}
+#btn-notification:checked ~ .notification-cont {
+  display: block;
+}
+/* ------------- user ------------- */
+#btn-user {
+  display: none;
+}
+.label-user {
+  margin-left: 2rem;
+}
+.label-user img {
+  width: 3.5rem;
+}
+.user-cont {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  overflow-y: scroll;
+  width: 55%;
+  height: 300px;
+  background-color: var(--color-black);
+  color: var(--color-withe);
+  font-size: 1.4rem;
+}
+.users {
+  width: 100%;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.user-item {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+.user-item img {
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+.user-item p {
+  margin-left: 1rem;
+}
+.manage-profiles {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.manage-profiles svg {
+  margin-left: 1rem;
+}
+.manage-profiles p {
+  margin-left: 1rem;
+}
+.submenu {
+  padding: 1rem 1rem 0 1rem;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.submenu p {
+  margin-bottom: 1rem;
+}
+.config {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  padding: 1rem 1rem 0 1rem;
+}
+.config > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.config > div p {
+  margin-left: 1rem;
+}
+.sign-out {
+  padding: 1rem;
+  text-align: center;
+}
+#btn-user:checked ~ .user-cont {
+  display: block;
+}
+
+
+/* ------------- main ------------- */
+main {
+  padding-top: 60px;
+  background-color: var(--color-black-background);
+}
+.sec-cont {
+  padding-left: 2rem;
+  margin-bottom: 4rem;
+}
+.sec-cont__h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--color-h2);
+}
+.sec-cont__carousel {
+  display: grid;
+  grid-template-columns: repeat(6,180px);
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+.sec-cont__carousel-item {
+  scroll-snap-align: center;
+  width: 100%;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* ----- Popular on netflix ------- */
+.popular-movie .item-1 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABa7ubCpXT3JUn1sAbI2c2wkgvCEUpQ9ed46ft9c97SuLyTSSIeFrzTAVtrHDwNDfqRIkLuZ70LP4oGrqmwj_ODqXWMeH6zDI6rFmW5eBHokariU5dzdYuKkJi92f.jpg);
+}
+.popular-movie .item-2 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZVHYst-9fSNc4tloXJpRIk2q-aM5OEI_1BXOZ3se9JA1VVQPR0k0ZkjPe-CWiIMZI8yH9I8d0-swbKMqcRXXKKrPUod6cx2Wmbp4rReGeJn9ThO6uioZr2VfawcPvOQ3tlTbXsUm8H8q0F7kamMdjrCmhlKzQ.jpg?r=34d);
+}
+.popular-movie .item-3 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZzDbHDQQ5Z2leD9OR-Y8o2r9YS0KMoeuK8sYOxL3ipAzQKkENsNO8xljgydnSQgBnv10oReDrhuyMOgllt3M2toALyzV2UxJYCs7nZsl9h17kg63yYsSTqT-Ewn.jpg?r=b47);
+}
+.popular-movie .item-4 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABad1Z-utvcERUkEbCA_kyxZyH4BwdxXKymFSuxKxsra8ZzMu7OkIuUFayKXIH85xrOrnzs8hmpolwG5JpCG1MqDha_Q.jpg?r=1fc);
+}
+.popular-movie .item-5 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfVflHIQeg7GYmZX_PM2lVwh605FMOyJvlAy57yeWWGgyyJlyiOqdBne-GiFuAnarE0lZnXhB4a8lLuh28W7eMe5xPE.jpg?r=01c);
+}
+.popular-movie .item-6 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeC3kg0ODtgTw-fMZ7J38-DJ77MsWznXQDsMfbhWKm2srPV9XcF5AOXeXNAcWKqTq2KmAfs-mhj1OIzYUa6h5vAVl9jpdYmvogLFO35PptbVz2WcR7Q8AtkTkjQnA-LMKw.jpg?r=265);
+}
+/* ----- Treding now ------- */
+.treding-now .item-1 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYw0iN132LohlV-jVqQc5z3SX4olJPDQ6EshXdSjUva9FG4poVmVfWlMmH9SNKwp0o6d_jD0gUL54H_5cet7jyTlBoW918uMRgJWa8AOwoKDuUTTdV6xlohxjs5MrXDj4Q.jpg?r=615);
+}
+.treding-now .item-2 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZZpHDpyCNxX6A1eJQsIKPQB75srBltN5LMa8ga6uVt-Y3UDu_BtUOOQ18ip8d2i2YuSDd_9F3orsRvK1vuAd00f1t4wFaUW9t1PNQXyzcpmSX2baVRkIXVnU0qA.jpg?r=d99);
+}
+.treding-now .item-3 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbuUKBmvMALo0ORKY4-lv_fbkfNgQn9_TJYEd8LultWx5WU1wnE8wVXk5ztKoBwcKHddxOuVAh5tYxl16KnPcPBoKnI.jpg?r=e23);
+}
+.treding-now .item-4 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXmArfKGmJy_BqrcVB-1La50D7zHK7ljFkw-QFBq74HHDQyqKEtPnSD-bsJD6AdRhNpMu_kw1K7amwMysBP9Mnw9DGI.jpg?r=8d1);
+}
+.treding-now .item-5 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWJoKk7w1oqbhuzmiim8RDUuXu5hzURuvsVsMQN5KR01XvTZrOVnCXOLZ1p5Ssih4TZSp0yqVhqORBLCxKHYXi9jXaDKBWQrA_KzbY1xUEsbJ0WBci9QMbrQBLqN.jpg?r=c02);
+}
+.treding-now .item-6 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTwBStZmRwdZmW4c1lxYfbSrZByNo-PAXY9995mFX1ogLHmvBQNiPMhxWS0qacTb7bWjBjQjzKw8hNwSoU_1XPSZ0Og.jpg?r=46f);
+}
+/* ----- continue-watching ------- */
+.continue-watching .item-1 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVyclfz7h4Ent3LCCRJAPI9FH9Dm5Xw8nYxYxG7B-8zH_0MGIUXucMYZrVgJJRLM48i_5qt6eCrVyBitQbRdlUPpvQauEaZ0UQxMNA4ecUrI9Nwy6oG70JfYq46U.jpg?r=078);
+}
+.continue-watching .item-2 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYrfj8uGl6OJZ4zUBW0zGR3ooLurHz76lPYDkHJQ32sZTfAyRh-qJwh2ceEr4aMk1fhSO_6RBH8eHY4r8SXJRr7WGrg.jpg?r=bcd);
+}
+.continue-watching .item-3 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbS_AoZVdo7mx7Grxzz6xSEKAPdyVJnD_UGQBiUaf4h0XdSsJaqRaktjAH3EpjP-I8jWoUaJ45oiIzuHlNx51ahzS-g.jpg?r=1fa);
+}
+.continue-watching .item-4 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUr3Y1-NF-H2vxX46gBEwdYqSlvDsY126karuPPoXnHjijxuk1cXPIb8lrLk8TfN3YXWzniCLhrTOROMXuLaKcji8lI.jpg?r=01d);
+}
+.continue-watching .item-5 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABS-8Aa3qfJHsJ9yKmgNG2vlB_mfAScxFup0-odSM_d4qbjGOxJvXK-vndUn9wSc7e4cB6g0DlJMV2GiSYvEyo2zrtzG6zo4i8cBD76Q6-CIe12y8X2O0j0lGUY7C.jpg?r=a70);
+}
+.continue-watching .item-6 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcc1rC5FPvtV9F6bh4byqHgYanVaHryO6yleqWAbIXc94vQWGkTqfba7p8NC-ZflNfj97ZEw9udCMvKl5-MmyM5G0W4.jpg?r=34e);
+}
+/* ----- comedies ------- */
+.comedies .item-1 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQS1KmYLGtAtDWj4_UEy02MXwJqpzsar3r--hK32gocOleUNx1zNL1LVQaad0lSUuhQb11-u6xVMvgfH0-iEqYgXWmw.jpg?r=a9a);
+}
+.comedies .item-2 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABT0ydYlHtH_Y28mz60nd3LTKVSvZQQM4uwMZzvei2Jjd_z7oKAz9bQOeT1HJMtktf1ITSVUe3AW_B5AkkGz3QrVeFZdRCNlD0AY0tGwH9J9nGUMpgt2N3vR2wM-U.jpg?r=1ea);
+}
+.comedies .item-3 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUDrdxhAk-_-kMxpvcDGCDNl4sEsaipyCui9qsynOXo5zqhMjgn0J-miZTLs0bIWvOPbY0lg2NMGBoa6OsEoCeTX6sA.jpg?r=cd8);
+}
+.comedies .item-4 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcFDzC5FkysjSJvIYBZcHx1iAW_kfCLDFLplmLYMWQIau6UsM1wKaG1noFp60qbXSTw_swRGBbm1wghhqxVqe2NQ9Lg.jpg?r=02e);
+}
+.comedies .item-5 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSYBuX8R5n0pAzwj6Gvz6RYpOp0bk_PhTL4K0NZwp36de83aTXWWheKW4GmRrv_MPm5u9FnWDEqggSJyNH9YUL09pfs.jpg?r=036);
+}
+.comedies .item-6 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUZUbasClU86SQUyk5e5OiRHoSOn8qHz_0idxikRw94hLGHNx4Wz2tbJh9fSebYUm7mcGNgDLXUleUxw-kUmvhB5khw.jpg?r=f87);
+}
+/* ----- only on netflix ------- */
+.only-netflix .item-1 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABX6umAp3W45a9H443QlE4oa5vhR6HBQUGE48gDMteuEL843gqDJhn2N69Cgxm4Io4D04FXoHiVVgi7Bkbcx2VRQjIcGIlT1LGre_1kEd06sRaGMO67kOnjP9NWvN.jpg?r=127);
+}
+.only-netflix .item-2 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSxsipDARw0A0W1KJ4Fv9F1Y_6Vr_oNCPBX-FQmTY03Sq5oP3XgzSa9P4obN99dSqwTuUd5y-L1es8OAi4uwxAq6QCE.jpg?r=7a5);
+}
+.only-netflix .item-3 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVp2asRLMqBDtgNX3bwzallgbvVwPg5d8BWUMuJjnesDoy8BJjjcirT4IRdWrCopjNdbNpCPdUE0OJgqe6x5va-SB5rn9rDEYtFtFCMg1hLGNmIJ7oszYvXw-opz.jpg?r=9a7);
+}
+.only-netflix .item-4 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWiSqlqTX0kHK2nxW5RHXQcFVAZpF3FWHX60tpOqloNepzSL1fX4Zk6bV0VveA8aCkjX826Tm8GlWodKv_3lqqXEm7twkHfHoywwuP8uQDaqlmUL6nkG6z2sFSu0.jpg?r=f45);
+}
+.only-netflix .item-5 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZCSnkLI-fvUpIhH9Qs0C6iLU9Dcb4bcO8MoZchYKRjdTulTDokKHrUwo_facLCSKb9hf8xOvzcMY64GUuWmesu8JO5f3UfKPw_o2WKf0A1rMeWaVG085VYW4vjR.jpg?r=38a);
+}
+.only-netflix .item-6 {
+  background-image: url(https://occ-0-413-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTDx5uuBen_3qGjOGDalBmU0dBbdGMph4dSd6D-YsnsdZO7_jmriaWM5cGMyF728SRlkIE4aXdZZgI-ZFsPkueok0yChT5WfMFH5CQIBJLKJMosJ2jTYdp5YpQSr.jpg?r=0b3);
+}
+.sec-10 {
+  margin-bottom: 0;
+}
+
+/* ----- Footer ------- */
+.footer {
+  padding: 8rem 2rem 4rem 2rem;
+  background-color: var(--color-black-background);
+}
+.ftr__list {
+  list-style: none;
+}
+.ftr__link {
+  font-size: 1.4rem;
+  color: var(--color-h2);
+  text-decoration: none;
+}
+.ftr__link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width:500px) {
+  .sec-cont__carousel {
+    grid-template-columns: repeat(6,220px);
+  }
+  .sec-cont__carousel-item {
+    height: 120px;
+  }
+  .ftr__list {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
