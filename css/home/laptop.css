@@ -55,3 +55,11 @@ main {
 .sec-cont__carousel-item {
   height: 160px;
 }
+/* ----- Footer ------- */
+.ftr__list,.list-social-media {
+  margin:  4rem auto;
+  max-width: 1000px;
+}
+.ftr__list {
+  grid-template-columns: repeat(4,1fr);
+}

@@ -159,12 +159,15 @@ main {
 
 }
 
-/* ----- Footer ------- */
-.ftr__list {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
+.sec-cont {
+  padding-left: 4rem;
 }
+
+/* ----- Footer ------- */
+.footer {
+  padding: 8rem 4rem 8rem 4rem;
+}
+
 
 @media screen and (min-width:600px) {
   .trailer__p {
@@ -177,4 +180,7 @@ main {
     height: 35px;
   }
 
+  .ftr__list {
+    grid-template-columns: repeat(3,1fr);
+  }
 }

@@ -112,6 +112,15 @@
 .sec-10 {
   margin-bottom: 0;
 }
-/* 
+
 @media screen and (min-width:1400px) {
-} */
+  .trailer-info {
+    max-width: 600px;
+  }
+  .trailer__h1 {
+    font-size: 14rem;
+  }
+  .trailer__p {
+    font-size: 2.5rem;
+  }
+}

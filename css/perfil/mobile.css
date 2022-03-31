@@ -1,0 +1,87 @@
+:root {
+  --color-withe: rgb(255, 255, 255);
+  --color-black: #141414;
+  --color-black-text: #737373;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-black);
+  color: var(--color-black-text);
+}
+/* --------------- Header --------------- */
+header {
+  padding: 2rem;
+}
+header svg {
+  width: 100px;
+  filter: invert(44%) sepia(95%) saturate(5830%) hue-rotate(341deg) brightness(81%) contrast(131%);
+  -webkit-filter: invert(44%) sepia(95%) saturate(5830%) hue-rotate(341deg) brightness(81%) contrast(131%);
+}
+/* --------------- Main --------------- */
+main {
+  display: grid;
+  place-items: center;
+  height: 90%;
+}
+h1 {
+  color: var(--color-withe);
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 4rem;
+}
+.user-cont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem 4rem ;
+  justify-content: center;
+}
+.user-item {
+  width: 30%;
+}
+.user-a {
+  display: block;
+  text-decoration: none;
+  color: var(--color-black-text);
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.user-img {
+  width: 100%;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.user-a:hover .user-text {
+  color: var(--color-withe);
+}
+.user-a:hover .user-img {
+  border: 2px solid var(--color-withe);
+}
+
+@media screen and (min-width: 650px) {
+  .user-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+  .user-item {
+    width: 20%;
+    max-width: 120px;
+  }
+}
