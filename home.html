@@ -11,6 +11,9 @@
   <!-- css -->
   <link rel="stylesheet" href="./css/home/mobile.css">
   <link rel="stylesheet" href="./css/home/tablet.css" media="screen and (min-width:500px)">
+  <link rel="stylesheet" href="./css/home/laptop.css" media="screen and (min-width:700px)">
+  <link rel="stylesheet" href="./css/home/desktop.css" media="screen and (min-width:850px)">
+  <link rel="stylesheet" href="./css/home/television.css" media="screen and (min-width:1000px)">
   <!-- title and icon -->
   <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" type="image/x-icon">
   <title>Home - Netflix</title>
@@ -169,6 +172,25 @@
     </div>
   </header>
   <main>
+    <section class="trailer-movie">
+      <video class="trailer" src="./assets/video/TENET - Tráiler Final - Castellano.mp4" preload="auto" autoplay loop muted></video>
+      <div class="trailer-text">
+        <div class="trailer-info">
+          <h1 class="trailer__h1">TENET</h1>
+          <p class="trailer__p">
+            Una acción épica que gira en torno al espionaje internacional, los viajes en el tiempo y la evolución, en la que un agente secreto debe prevenir la Tercera Guerra Mundial.
+          </p>
+          <button class="trailer__play">
+            <img src="./assets/icon/play.svg" alt="">
+            Play
+          </button>
+          <button class="trailer__more-info">
+            <img src="./assets/icon/info.svg" alt="">
+            More Info
+          </button>
+        </div>
+      </div>
+    </section>
     <section class="sec-cont sec-1">
       <h2 class="sec-cont__h2">Popular on Netflix</h2>
       <div class="sec-cont__carousel popular-movie">

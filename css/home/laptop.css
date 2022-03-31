@@ -1,0 +1,57 @@
+/* ------------- nav ------------- */
+.list-cont {
+  width: 300px;
+  left: 2rem;
+}
+/* ------------- secondary nav ------------- */
+.secondary-nav {
+  justify-content: flex-end;
+}
+/* ------------- search ------------- */
+.search-cont {
+  width: 250px;
+}
+/* ------------- notification ------------- */
+.notification-cont {
+  max-width: 300px;
+}
+/* ------------- user ------------- */
+.user-cont {
+  max-width: 300px;
+  height: auto;
+  right: 2rem;
+  overflow: visible;
+}
+
+/* ------------- .trailer-movie ------------- */
+.trailer-movie {
+  height: 400px;
+}
+.trailer {
+  width: 125%;
+}
+.trailer-text {
+  padding: 4rem;
+}
+.trailer-info {
+  margin-top: 5rem;
+}
+.trailer__h1 {
+  font-size: 7rem;
+}
+.trailer__p {
+  font-size: 1.6rem;
+}
+
+
+/* ------------- main ------------- */
+main {
+  padding-top: 0;
+}
+.sec-cont__carousel {
+  grid-template-columns: repeat(6,300px);
+  overflow-x: hidden;
+}
+.sec-cont__carousel-item {
+  height: 160px;
+}

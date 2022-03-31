@@ -4,7 +4,7 @@
 .header {
   font-size: 1.2rem;
   padding:  0 2rem;
-  background-color: var(--color-black);
+  z-index: 2;
 }
 .logo svg {
   width: 8rem;
@@ -16,12 +16,14 @@
 }
 .list-cont {
   top: 55px;
-  width: 50%;
+  width: 250px;
 }
 /* ------------- notification ------------- */
 .notification-cont {
   top: 55px;
   width: 50%;
+  max-width: 280px;
+  right: 7rem;
 }
 /* ------------- user ------------- */
 .user-cont {
@@ -74,6 +76,9 @@
 }
 
 /* ------------- main ------------- */
+main {
+  padding-top: 0;
+}
 .sec-cont__carousel {
   grid-template-columns: repeat(6,220px);
 }
@@ -81,9 +86,95 @@
   height: 120px;
 }
 
+/* ------------- .trailer-movie ------------- */
+.trailer-movie {
+  display: block;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 4rem;
+}
+.trailer {
+  z-index: -1;
+  position: absolute;
+  width: 145%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+.trailer-text {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  color: var(--color-withe);
+  position: relative;
+}
+.trailer-info {
+  width: 45%;
+  max-width: 300px;
+  margin-top: 6rem;
+}
+.trailer__h1 {
+  font-size: 5rem;
+}
+.trailer__p {
+  margin-top: 1rem;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+.trailer-info button {
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0 1.5rem;
+  height: 30px;
+}
+.trailer-info button img {
+  width: 16px;
+  margin-right: 5px;
+}
+.trailer__more-info {
+  background-color: rgba(255, 255, 255, 0.342);
+  color: var(--color-withe);
+}
+.trailer__more-info img {
+  filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(156deg) brightness(105%) contrast(101%);
+  -webkit-filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(156deg) brightness(105%) contrast(101%);
+
+}
+
 /* ----- Footer ------- */
 .ftr__list {
   display: flex;
   gap: 2rem;
   justify-content: center;
+}
+
+@media screen and (min-width:600px) {
+  .trailer__p {
+    font-size: 1.4rem;
+  }
+  .trailer-info button {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    margin-right: 1rem;
+    height: 35px;
+  }
+
 }
