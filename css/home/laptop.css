@@ -24,17 +24,12 @@
 }
 
 /* ------------- .trailer-movie ------------- */
-.trailer-movie {
-  height: 400px;
-}
 .trailer {
-  width: 125%;
+  width: 165%;
+  height: auto;
 }
 .trailer-text {
   padding: 4rem;
-}
-.trailer-info {
-  margin-top: 5rem;
 }
 .trailer__h1 {
   font-size: 7rem;
